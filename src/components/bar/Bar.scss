@@ -1,0 +1,46 @@
+@import '../../sass/variables';
+
+.bar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  &__container {
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 10%;
+    margin: 5px;
+    border-radius: 0.25em;
+    overflow: hidden;
+    background-color: $accent;
+
+    &--select {
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      flex: 1;
+      padding: 0px 15px;
+      color: #fff;
+      cursor: pointer;
+      background-color: $accent;
+    }
+
+    &--select::-ms-expand {
+      display: none;
+    }
+
+    &::after {
+      content: '\25BC';
+      position: absolute;
+      top: 20%;
+      right: 0;
+      background-color: $accent;
+      transition: 0.25s all ease;
+      pointer-events: none;
+    }
+    &select:hover::after {
+      color: $color-primary;
+    }
+  }
+}

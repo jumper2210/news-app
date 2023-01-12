@@ -1,0 +1,15 @@
+@import './sass/mixins';
+@import './sass/variables';
+
+body {
+  @include reset;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: $mainFont;
+}

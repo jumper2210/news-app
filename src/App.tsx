@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home } from './home/Home'
+import { Home } from './containers/home/Home'
 
 function App() {
   return <Home />
