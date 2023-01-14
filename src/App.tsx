@@ -1,7 +1,12 @@
 import React from 'react'
 import { Home } from './containers/home/Home'
+import { NewsProvider } from './contexts/NewsProvider'
 
 function App() {
-  return <Home />
+  return (
+    <NewsProvider>
+      <Home />
+    </NewsProvider>
+  )
 }
 export default App

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.scss'
 import { Bar } from '../../components/bar/Bar'
 import { News } from '../../components/news/News'
