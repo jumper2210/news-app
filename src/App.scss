@@ -11,5 +11,17 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font: $mainFont;
+  font-family: $mainFont;
+}
+
+html {
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 65%;
+  }
 }

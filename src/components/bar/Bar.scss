@@ -7,8 +7,8 @@
     position: relative;
     display: flex;
     height: 30px;
-    width: 10%;
-    margin: 5px;
+    width: 12%;
+    margin: 15px;
     border-radius: 0.25em;
     overflow: hidden;
     background-color: $accent;
@@ -21,7 +21,6 @@
       flex: 1;
       padding: 0px 15px;
       color: #fff;
-      cursor: pointer;
       background-color: $accent;
     }
 
